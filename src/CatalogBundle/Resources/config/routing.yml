@@ -1,0 +1,7 @@
+catalog_product:
+    resource: "@CatalogBundle/Resources/config/routing/product.yml"
+    prefix:   /product
+
+catalog_homepage:
+    path:     /
+    defaults: { _controller: CatalogBundle:Default:index }

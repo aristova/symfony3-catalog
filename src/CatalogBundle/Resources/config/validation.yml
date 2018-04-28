@@ -1,0 +1,5 @@
+CatalogBundle\Entity\Product:
+    properties:
+        url:
+            - Url: { checkDNS: 'ANY', dnsMessage: 'The host "{{ value }}" could not be resolved.' }
+            - CatalogBundle\Validator\Constraints\ContainsDomain: ~

@@ -1,0 +1,9 @@
+services:
+    catalog.scrapper:
+        class: CatalogBundle\Service\Scrapper
+        arguments: ['@service_container']
+    catalog.file_uploader:
+        class: CatalogBundle\Service\FileUploader
+        arguments:
+            $targetDirectory: "%image_directory%"
+

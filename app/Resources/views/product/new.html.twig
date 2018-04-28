@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Product creation</h1>
+
+    {{ form_start(form) }}
+    <h3>{{ form_label(form.url, "URL from this product on Yandex.Market") }}</h3>
+    {{ form_errors(form.url) }}
+    {{ form_widget(form.url) }}
+    {{ form_row(form._token) }}
+        <input type="submit" value="Create Product" />
+    {{ form_end(form, {'render_rest': false}) }}
+
+    <ul>
+        <li>
+            <a href="{{ path('product_index') }}">Back to the list</a>
+        </li>
+    </ul>
+{% endblock %}
