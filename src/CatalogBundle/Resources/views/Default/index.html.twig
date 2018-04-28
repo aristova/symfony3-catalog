@@ -1,1 +1,12 @@
-Hello World!
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Welcome!</h1>
+
+
+    <ul>
+        <li>
+            <a href="{{ path('product_new') }}">Create a new product</a>
+        </li>
+    </ul>
+{% endblock %}
